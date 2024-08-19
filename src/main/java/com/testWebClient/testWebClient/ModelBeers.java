@@ -15,7 +15,7 @@ import lombok.Builder;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY) // corrige el error seriabizable
 public class ModelBeers {
 	
 	private  Integer id;
@@ -29,6 +29,7 @@ public class ModelBeers {
 	private String ibu;
 	private String alcohol;
 	private String blg;
+	private String encritp;
 	
 	
 
